@@ -29,8 +29,8 @@ export default function App() {
     </div>
   </section>
   <section className="flex flex-col items-center justify-center gap-4 py-8">
-    <h2 className="text-2xl font-bold mb-4">Select Currency</h2>
-    <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+    <h2 className="text-2xl font-bold mb-4 ">Select Currency</h2>
+    <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 ">
       {currencies.map((currency) => (
         <CurrencyCountryButtons 
           key={currency.code}
@@ -43,7 +43,7 @@ export default function App() {
       ))}
     </div>
   </section>
-  <section className="flex flex-col items-center justify-center h-1/3 mt-auto p-4 bg-gray-100 border-t-4 border-gray-300">
+  <section className="flex flex-col items-center justify-center h-1/3 mt-auto p-4 bg-gray-100 border-t-4 border-gray-300 ">
     <h2 className="text-2xl font-bold mb-4">Conversion Result</h2>
     <div className="bg-white rounded-lg p-4 shadow-md">
       <h1 className="text-4xl font-bold mb-4">{result.toFixed(2)}</h1>
